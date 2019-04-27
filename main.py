@@ -5,9 +5,9 @@ app = Flask(__name__)
 def hello():
    return "Helllllo World!"
 
-print(return)
+print(hello)
 
-listWords = return.split()
+listWords = hello.split()
 
 idLongestWord = 0
 
