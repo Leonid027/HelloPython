@@ -6,15 +6,19 @@ def hello():
    return "Helllllo World!"
 
 print(hello())
-
 listWords = hello().split()
-
 idLongestWord = 0
-
 for i in range(1,len(listWords)):
     if len(listWords[idLongestWord]) < len(listWords[i]):
         idLongestWord = i
+print(listWords[idLongestWord])
 
+print(hello())
+listWords = hello().split()
+idLongestWord = 0
+for i in range(1,min(listWords)):
+    if min(listWords[idLongestWord]) < min(listWords[i]):
+        idLongestWord = i
 print(listWords[idLongestWord])
  
  
