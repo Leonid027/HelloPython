@@ -13,7 +13,7 @@ for i in range(1,len(listWords)):
         idLongestWord = i
 print(listWords[idLongestWord])
 
-    return hello
+    return hello()
    
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
