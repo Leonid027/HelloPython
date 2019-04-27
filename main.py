@@ -3,21 +3,21 @@ app = Flask(__name__)
 
 @app.route("/")
 
+string = "python java c c++ javascript pascal php"
+print(string)
 
-text = "hello cruel world. This is a sample text"
-d = dict.fromkeys(text, 0)
-for c in text: d[c] += 1
- print d ['a']
+listWords = str.split()
 
-#def hello();
-#eturn "Hello Ploss, pozdravlyayu ss 5!"
-#def func(string):
- # maxlen = 0
- # for x in string.split('Hello Ploss, pozdravlyayu ss 5!'):
- #   if len(x)> maxlen:
-   #   maxlen = len(x)
-   #   word = x
- # print (string +'\n','Самое длинное слово - ', word, ',', maxlen, ' символов')
+idLongestWord = 0
+
+for i in range(1,len(listWords)):
+    if len(listWords[idLongestWord]) < len(listWords[i]):
+        idLongestWord = i
+
+print(listWords[idLongestWord])
+ 
+ 
+ 
  
 # func(string = input ('Введите строку: '))
 if __name__ == '__main__':
