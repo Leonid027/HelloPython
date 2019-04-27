@@ -2,11 +2,12 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
-
+#def hello():
+  #  return "Hello World!"
 string = "python java c c++ javascript pascal php"
 print(string)
 
-listWords = str.split()
+listWords = string.split()
 
 idLongestWord = 0
 
