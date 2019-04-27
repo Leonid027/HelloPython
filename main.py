@@ -4,13 +4,10 @@ app = Flask(__name__)
 @app.route("/")
 
 
-f = open("lesson.txt")
-r = f.read()
- 
-# данный код определяет сколько раз встречается самое длинное слово в файле.
-s = max(map(lambda x: (len(x), x), r.replace(',','').replace('.','').split(" ")))
- 
-print(r,'\n','Самое длинное слово:"',s[1],'" встречается:',r.count(s[1]), 'раз(а)')
+text = "hello cruel world. This is a sample text"
+d = dict.fromkeys(text, 0)
+for c in text: d[c] += 1
+ print d ['a']
 
 #def hello();
 #eturn "Hello Ploss, pozdravlyayu ss 5!"
