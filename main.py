@@ -1,10 +1,9 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/begin', methods=['POST']) 
-def begin():
- 
-def hello()
+@app.route('/hello', methods=['POST']) 
+
+def hello():
    return "Helllllo World!"
 print(hello())
 listWords = hello().split()
@@ -14,7 +13,7 @@ for i in range(1,len(listWords)):
         idLongestWord = i
 print(listWords[idLongestWord])
 
-    return begin
+    return hello
    
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
