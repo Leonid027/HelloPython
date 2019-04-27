@@ -12,7 +12,7 @@ def func(string):
       word = x
   print (string +'\n','Самое длинное слово - ', word, ',', maxlen, ' символов')
  
-func(string = input ('Введите строку: '))
+# func(string = input ('Введите строку: '))
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
     
