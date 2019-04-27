@@ -8,15 +8,11 @@ def hello():
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
     
-string = hello()
- 
-words = string.split()
- 
-shortest = words[0]
- 
-for i in words[1:]:
-    if len(i) < len(shortest):
-        shortest = i
- 
-print(shortest)
-print(len(shortest))
+>>> def maxlen(s):
+...     return len(max(s.split(), key=len))
+...
+>>> maxlen("Hello world") == 5
+True
+>>> maxlen("This is a simple test") == 6
+True
+>>>
