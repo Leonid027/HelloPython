@@ -8,11 +8,12 @@ def hello():
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
     
->>> def maxlen(s):
-...     return len(max(s.split(), key=len))
-...
->>> maxlen("Hello world") == 5
-True
->>> maxlen("This is a simple test") == 6
-True
->>>
+def func(string):
+  maxlen = 0
+  for x in string.split(' '):
+    if len(x)> maxlen:
+      maxlen = len(x)
+      word = x
+  print (string +'\n','Самое длинное слово - ', word, ',', maxlen, ' символов')
+ 
+func(string = input ('Введите строку: '))
