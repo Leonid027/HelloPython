@@ -2,7 +2,7 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/begin', methods=['POST']) 
-def begin()
+def begin():
  
 def hello()
    return "Helllllo World!"
